@@ -1,0 +1,52 @@
+@import "compass/reset";
+
+@import "compass/css3/transition";
+
+.container {
+
+	width: 960px;
+	margin: 0 auto;
+}
+
+.carousel {
+	overflow: hidden;
+	width: 960px;
+	margin-bottom: 20px;
+}
+
+.carousel__inner {
+	position: relative;
+
+	overflow: hidden;
+	margin-left: 0;
+	width: 200000px;
+
+	background: orange;
+
+	@include transition(margin-left 1200ms);
+}
+
+.carousel__item {
+	float: left;
+	
+	height: 200px;
+	width: 200px;
+	margin-right: 10px;
+
+	background: red;
+
+	&.active {
+		background: yellow;
+	}
+}
+
+.carousel__item--key {
+	width: 400px;
+}
+
+.pag .pag__item {
+
+	&[disabled="disabled"] {
+		color: #CCC;
+	}
+}
