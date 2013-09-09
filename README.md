@@ -1,0 +1,1 @@
+# Very basic JS slider using jQuery
